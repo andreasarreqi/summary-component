@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/49ba80934f.js" crossorigin="anonymous"></script>
 
   <title>Frontend Mentor | Results summary component</title>
 
@@ -41,26 +42,32 @@
         <h2 style="float: left;"> Summary </h2>
 
         <div style="position: relative; ">
-          <p style="left:50px; margin-left:10px; width: 50px; color:red; font-size: 15px;"> Reaction </p>
+          
+          <p style="left:50px; margin-left:20px; width: 50px; color:red; font-size: 15px;"> Reaction </p>
           <p style="position: relative; top:-33px;"><strong> 80 </strong>
             / 100
           </p>
         </div>
-        <p style="margin-left:10px; width: 50px; color:yellow;"">Memory </p>
-        <p style="position: relative; top:-33px;"><strong>92 </strong>
-        / 100
-      </p>
-        <p style="margin-left:10px; width: 50px; color:greenyellow;">Verbal</p>
-        <p style=" position: relative; top:-33px;"><strong>61 </strong>
-        / 100
-        </p>
-        <p style="margin-left:10px; width: 50px;  color:blue;"> Visual</p>
-        <p style=" position: relative; top:-33px;"><strong> 72 </strong>
-          / 100
-        </p>
-
+        <div style="position: relative; top: -20px;">
+          <p style="margin-left:20px; width: 50px; color:yellow;"">Memory </p>
+        <p style=" position: relative; top:-33px;"><strong>92 </strong>
+            / 100
+          </p>
+        </div>
+        <div style="position: relative; top:-39px;">
+          <p style="margin-left:20px; width: 50px; color:greenyellow;">Verbal</p>
+          <p style=" position: relative; top:-33px;"><strong>61 </strong>
+            / 100
+          </p>
+        </div>
+        <div style="position: relative; top:-50px;">
+          <p style="margin-left:20px; width: 50px;  color:blue;"> Visual</p>
+          <p style=" position: relative; top:-33px;"><strong> 72 </strong>
+            / 100
+          </p>
+        </div>
         <input
-          style="  cursor: pointer; color:white; border: none; background-color: rgba(8, 0, 85, 0.735); border-radius: 35px; height: 30px; width: 170px;"
+          style=" position: relative; left: -70px; top: -75px; cursor: pointer; color:white; border: none; background-color: rgba(8, 0, 85, 0.735); border-radius: 35px; height: 40px; width: 200px;"
           value="Continue" type="button">
       </div>
     </div>
