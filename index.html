@@ -20,13 +20,38 @@
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
+
+    @media only screen and (max-width: 375px) {
+      .score {
+        width: 300px;
+        margin-left: 50px;
+      }
+
+      .summary {
+        padding: 20px;
+        position: relative;
+        left: 100px;
+        text-align: center;
+        display: flex;
+        word-spacing: 50px;
+        float: left;
+
+      }
+      .sm {
+        position: relative;
+        left: -50px;
+      }
+      input {
+        margin-left: 40px;
+      }
+    }
   </style>
 </head>
 
 <body>
   <main>
     <div class="container">
-      <div
+      <div class="score"
         style="border-radius: 6%; color:white; text-align: center; align-items: center; display:grid; width: 250px; float: left; background: blue; height: 20rem;">
         <h2> Your Result </h2>
         <div class="result-number" style="margin-left: 62px; background-image: linear-gradient(to bottom, #154691, blue, blue, blue, blue);
@@ -37,12 +62,12 @@
         <h2> Great </h2>
         <p> You scored higher than 65% of the people who have taken these tests. </p>
       </div>
-      <div style=" float: left; width: 23%;
+      <div class="summary" style=" float: left; width: 23%;
         padding:10px; display: block; text-align: center; align-items: center; margin-left: 10px">
-        <h2 style="float: left;"> Summary </h2>
+        <h2 class="sm"style="float: left;"> Summary </h2>
 
-        <div style="position: relative; ">
-          
+        <div class="paragraphs" style="position: relative; ">
+
           <p style="left:50px; margin-left:20px; width: 50px; color:red; font-size: 15px;"> Reaction </p>
           <p style="position: relative; top:-33px;"><strong> 80 </strong>
             / 100
@@ -73,11 +98,6 @@
     </div>
 
   </main>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 
 </html>
